@@ -1,0 +1,32 @@
+/******************************
+* Main navigation
+******************************/
+.main-nav {
+    position: fixed;
+    left: 25px;
+    top: 100px;
+    width: 100px;
+    background: $gray-lightdark;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__link {
+        display: inline-block;
+        color: #000;
+        background-color: $color-white;
+        margin: 5px;
+        border-radius: 20px;
+        text-decoration: none;
+        border: 3px solid $color-black;
+        height: 44px;
+        width: 44px;
+        line-height: 36px;
+    }
+}

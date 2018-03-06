@@ -1,0 +1,33 @@
+/******************************
+* Variables
+******************************/
+// Colours
+$color-primary:         #000 !default;
+$color-secondary:       #fff !default;
+$color-white:           #fff !default;
+$color-black:           #000 !default;
+$color-purple-light:    #c0bcff !default;
+$bg-purple-base:        #6900ff !default;
+$gray-light:            #eee !default;
+$gray-lightdark:        #a8a8a8 !default;
+$gray-dark:             #747474 !default;
+$gray-border:           #d1d1d2 !default;
+$color-inline-link:     #645ec8 !default;
+
+// Fonts
+$font-stack-roboto:     'Roboto', Arial, sans-serif !default;
+$font-stack-monospace:  'Space Mono', 'Roboto', sans-serif !default;
+$font-size-h1:          22px !default;
+$font-size-h2:          15px !default;
+$font-size-default:     13.5px !default;
+$line-height-default:   23px !default;
+
+// Breakpoints
+$bp320:                 320px !default;
+$bp480:                 480px !default;
+$bp768:                 768px !default;
+$bp1024:                1024px !default;
+$bp1200:                1200px !default;
+
+// Misc.
+$main-border-size:      12px;

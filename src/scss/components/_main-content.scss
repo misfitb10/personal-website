@@ -1,0 +1,169 @@
+/******************************
+* Main content blocks (article)
+******************************/
+.article {
+    margin-top: 100px;
+
+    &.is-small {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &.is-floor {
+        margin-top: 114px;
+
+        @include breakpoint(0px 1023px, 'from-to') {
+            margin-top: 45px;
+        }
+    }
+
+    &__header {
+        max-width: 1000px;
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    &__main {
+        background: $color-white;
+        max-width: 930px;
+        min-height: 310px;
+        height: auto;
+        z-index: 341;
+        position: relative;
+        padding: 40px;
+        margin: 0 auto;
+        transition: all 0.1s;
+
+        border-bottom: $main-border-size solid $color-purple-light;
+        border-left: $main-border-size solid $color-purple-light;
+        border-right: $main-border-size solid $gray-border;
+        border-top: $main-border-size solid $gray-border;
+
+        @include breakpoint(0px 768px, 'from-to') {
+            border-width: 5px;
+        }
+
+        @include breakpoint(0px 1024px, 'from-to') {
+            padding: 15px;
+        }
+
+        &:hover {
+            border-bottom-color: $gray-border;
+            border-left-color: $gray-border;
+            border-right-color: $color-purple-light;
+            border-top-color: $color-purple-light;
+        }
+
+        .is-top & {
+            background-color: #b7e8ff;
+            cursor: url(../images/rsz_trophy.png) 4 12, pointer;
+        }
+
+        &.has-related-things {
+            display: flex;
+        }
+
+        &.has-header {
+            margin-top: -30px;
+        }
+    }
+
+    &__text {
+        width: 100%;
+
+        @include breakpoint(0px 1024px, 'from-to') {
+            width: 100%;
+        }
+
+        .has-related-things & {
+            width: 70%;
+
+            @include breakpoint(0px 1024px, 'from-to') {
+                width: 100%;
+            }
+        }
+
+        &.is-centered {
+            text-align: center;
+
+            p {
+                margin-left: 0;
+            }
+        }
+
+        a {
+            color: $color-inline-link;
+        }
+    }
+
+    &__related-things {
+        text-align: right;
+        width: 35%;
+        position: relative;
+        top: 43px;
+        right: -72px;
+
+        @include breakpoint(0px 1024px, 'from-to') {
+            display: none;
+        }
+    }
+}
+
+.is-song {
+    margin: 40px 0;
+    transform: scale(1);
+    transition: all 0.25s;
+
+    &:hover {
+        transform: scale(1.35);
+        animation: bgcolour-flip 1.25s infinite;
+    }
+}
+
+.text {
+    &--small-devices {
+        @include breakpoint(1024px, 'to') {
+            display: block;
+        }
+
+        display: none;
+    }
+
+    &--big-devices {
+        @include breakpoint(1024px, 'to') {
+            display: none;
+        }
+
+        display: block;
+    }
+
+    &--original {
+        .text--revealed {
+            display: block;
+            opacity: 0;
+            transform: translateY(-5px);
+            transition: all 0.25s;
+        }
+
+        &:hover .text--revealed {
+            opacity: 1;
+            transform: translateY(0);
+            color: $gray-lightdark;
+        }
+    }
+}
+
+.img__bunkers {
+    @include breakpoint(1025px, 'from') {
+        position: relative;
+        top: -110px;
+    }
+}
+
+#floor1 li:first-child, #filler5 {
+    @include breakpoint(1024px, 'to') {
+        display: none;
+    }
+}
+

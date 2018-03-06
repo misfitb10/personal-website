@@ -1,0 +1,168 @@
+/******************************
+* Reset / default styles
+******************************/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    @include breakpoint(0px 1024px, 'from-to') {
+        margin: 10px;
+    }
+}
+
+body {
+    margin: 0;
+    background: $gray-light;
+    cursor: url(../images/rsz_cursor-cool.png) 70 60,pointer;
+    font-family: 'Space Mono', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 23px;
+
+    @include breakpoint(0px 767px, 'from-to') {
+        font-size: 13px;
+    }
+}
+
+h1, h2, h3, p, ul {
+    transition: all .25s;
+}
+
+h1 {
+    font-family: $font-stack-roboto;
+    font-size: 45px;
+    display: inline-block;
+    background: #0ff;
+    box-shadow: 6px 6px 1px #645ec8;
+    margin: 0;
+    line-height: 32px;
+    position: relative;
+    top: -30px;
+    left: -72px;
+
+    &:hover {
+        animation: font-flip 1s infinite;
+    }
+
+    @include breakpoint(0px 767px, 'from-to') {
+        margin-top: 25px;
+        font-size: $font-size-h1;
+        left: -10px;
+        top: -15px;
+    }
+
+    @include breakpoint(768px 1024px, 'from-to') {
+        top: 0;
+        left: 0;
+        margin-bottom: 30px;
+    }
+
+    &.h1--cleared {
+        left: auto;
+    }
+}
+
+h2 {
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px 0 5px 0;
+    padding-bottom: 1px;
+    border-bottom: 2px dashed red;
+}
+
+p {
+    font-family: $font-stack-monospace;
+    margin: 0 0 20px 20px;
+    transition: all 0.25s;
+
+    @include breakpoint(0px 480px, 'from-to') {
+        margin-left: 5px;
+    }
+
+    @include breakpoint(481px 1024px, 'from-to') {
+        margin-right: 20px;
+    }
+
+    &.text--small {
+        font-size: 12px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    cursor: url(../images/rsz_cursor-eyes.png) 4 12, pointer;
+}
+
+.side-gif {
+    background-image: url(../images/coding.gif);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 55%;
+    width: 100%;
+}
+
+.main-content {
+    max-width: 1000px;
+    position: relative;
+    margin: 100px auto;
+}
+
+.clear-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    background-color: #6900ff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9839043434;
+}
+
+.floor-label {
+    cursor: help;
+    position: absolute;
+    right: -22px;
+    top: -10px;
+    background: #645ec8;
+    color: $color-white;
+    transform: rotate(5deg);
+
+    @include breakpoint(0px 1023px, 'from-to') {
+        right: 0;
+    }
+}
+
+.floor-name {
+    display: inline-block;
+
+    @include breakpoint(0px 1023px, 'from-to') {
+        font-size: 14px;
+    }
+
+    &:hover {
+        animation: keep-rotating 1s infinite;
+    }
+}
+
+
+.elevator-pitch {
+    cursor: url(../images/rsz_tie.png) 4 12, pointer;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    text-align: center;
+
+    @include breakpoint(1366px, 'to') {
+        display: none;
+    }
+}

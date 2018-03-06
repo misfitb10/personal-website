@@ -1,0 +1,101 @@
+/******************************
+* Buttons/links
+******************************/
+.btn {
+    // General button container
+    &-container {
+        position: absolute;
+        left: -26px;
+        top: 100px;
+        width: 50px;
+
+        @include breakpoint(0px 1024px, 'from-to') {
+            display: none;
+        }
+    }
+
+    // Round buttons for lifting up
+    &--round {
+        text-decoration: none;
+        background-color: $gray-lightdark;
+        border: 3px solid $gray-dark;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        line-height: 46px;
+        color: $color-white;
+        text-align: center;
+        transition: all 0.25s;
+
+        &:hover {
+            background-color: $gray-dark;
+            border: 3px solid $gray-lightdark;
+        }
+
+        + .btn--round {
+            margin-top: 10px;
+        }
+    }
+
+    // Action buttons (sidebar)
+    &--action {
+        color: $color-white;
+        text-decoration: none;
+        display: inline-block;
+        background-color: #199e32;
+        transition: all .25s;
+        margin-top: 20px;
+
+        &:hover {
+            //transform: translateX(20px);
+            animation: bgcolour-flip 1.5s infinite;
+        }
+    }
+
+    // Gif buttons
+    &--gif {
+        background: #1defff;
+        color: $color-black;
+        display: inline-block;
+
+        &:hover {
+            color: #1defff;
+        }
+
+        @include breakpoint(0px 1024px, 'from-to') {
+            background: transparent;
+            padding: 0;
+
+            &:hover {
+                color: $color-black;
+            }
+        }
+    }
+
+    // Sound buttons
+    &--sound {
+        background: #ffa573;
+        color: $color-black;
+
+        &:hover {
+            color: #ffa573;
+        }
+    }
+
+    &--stop-elevator-pitch {
+        display: none;
+    }
+
+    // Call to action
+    &--cta {
+        text-decoration: none;
+        border: 2px solid $color-inline-link;
+        box-shadow: 6px 6px 1px $color-black;
+        transition: all 0.25s;
+
+        &:hover {
+            box-shadow: 0 0 0 transparent;
+        }
+    }
+}

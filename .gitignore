@@ -1,0 +1,78 @@
+### development artifacts ###
+
+build
+node
+node_modules
+tmp
+npm-debug.log
+
+# SASS
+
+*.sass-cache
+
+
+
+### IDE ###
+
+# IntelliJ / Webstorm
+
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+atlassian-ide-plugin.xml
+
+
+# External tool builders
+
+.externalToolBuilders/
+
+
+# CDT-specific
+
+.cproject
+
+
+# PDT-specific
+
+.buildpath
+
+
+
+# SublimeText project files
+
+*.sublime-workspace
+
+
+
+
+### OS specific ###
+
+# OSX
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+
+# Windows
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+bash.exe.stackdump
+
+# Folder config file
+
+Desktop.ini
+
+# Recycle Bin used on file shares
+
+$RECYCLE.BIN/
+target/
+

@@ -1,0 +1,33 @@
+.nsfw {
+    &__list {
+        @include clearList;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        border: 10px solid $color-black;
+        width: 50%;
+        height: 200px;
+        color: red;
+        background: $color-black;
+        font-size: 50px;
+        line-height: 200px;
+
+        @include breakpoint(0px 480px, 'from-to') {
+            font-size: 30px;
+        }
+
+        &:hover {
+            color: transparent;
+            animation: border-flip 10s infinite;
+        }
+    }
+
+    &__trap-image {
+        background-image: url("../images/nsfw-trap.gif");
+        background-size: cover;
+        background-position: 0px -52px;
+    }
+}
