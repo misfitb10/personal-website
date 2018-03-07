@@ -48,7 +48,6 @@
         margin-top: 20px;
 
         &:hover {
-            //transform: translateX(20px);
             animation: bgcolour-flip 1.5s infinite;
         }
     }
@@ -81,10 +80,6 @@
         &:hover {
             color: #ffa573;
         }
-    }
-
-    &--stop-elevator-pitch {
-        display: none;
     }
 
     // Call to action

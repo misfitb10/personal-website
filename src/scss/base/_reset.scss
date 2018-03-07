@@ -36,7 +36,7 @@ h1 {
     font-size: 45px;
     display: inline-block;
     background: #0ff;
-    box-shadow: 6px 6px 1px #645ec8;
+    box-shadow: 6px 6px 1px $bg-purple-base;
     margin: 0;
     line-height: 32px;
     position: relative;
@@ -119,7 +119,7 @@ img {
 }
 
 .overlay {
-    background-color: #6900ff;
+    background-color: $bg-purple-base;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -133,7 +133,7 @@ img {
     position: absolute;
     right: -22px;
     top: -10px;
-    background: #645ec8;
+    background: $bg-purple-base;
     color: $color-white;
     transform: rotate(5deg);
 

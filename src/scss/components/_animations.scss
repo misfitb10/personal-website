@@ -4,32 +4,32 @@
 @keyframes bgcolour-flip {
     15% { background-color: blue; }
     30% { background-color: purple; }
-    45%  { background-color: orange; }
+    45% { background-color: orange; }
     60% { background-color: green; }
     75% { background-color: pink; }
-    90%  { background-color: purple; }
+    90% { background-color: purple; }
 }
 
 @keyframes keep-rotating {
-    50% { transform: rotate(225deg) }
-    100% { transform: rotate(360deg); background-color: $color-white; color: #ff0090; }
+    50%     { transform: rotate(225deg) }
+    100%    { transform: rotate(360deg); background-color: $color-white; color: #ff0090; }
 }
 
 @keyframes font-flip {
-    15% { font-family: Georgia, serif; border-color: blue; }
-    30% { font-family: "Comic Sans MS", serif; border-color: purple; }
-    45% { font-family: "Times New Roman", sans-serif; border-color: black; }
-    60% { font-family: Arial, serif; border-color: green; }
-    75% { font-family: Georgia, sans-serif; border-color: pink; }
-    90%  { font-family: Tahoma, serif; border-color: purple; }
-    100% { font-family: Calibri, sans-serif; border-color: green; }
+    15%     { font-family: Georgia, serif; border-color: blue; }
+    30%     { font-family: Comic Sans MS, serif; border-color: purple; }
+    45%     { font-family: Times New Roman, sans-serif; border-color: black; }
+    60%     { font-family: Arial, serif; border-color: green; }
+    75%     { font-family: Georgia, sans-serif; border-color: pink; }
+    90%     { font-family: Tahoma, serif; border-color: purple; }
+    100%    { font-family: Calibri, sans-serif; border-color: green; }
 }
 
 @keyframes border-flip {
     15% { border-color: blue; }
     30% { border-color: purple; }
-    45%  { border-color: orange; }
+    45% { border-color: orange; }
     60% { border-color: green; }
     75% { border-color: pink; }
-    90%  { border-color: purple; }
+    90% { border-color: purple; }
 }
