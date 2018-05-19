@@ -2,26 +2,24 @@
   "name": "bilal",
   "version": "1.0.0",
   "description": "personal website",
-  "main": "index.js",
+  "author": "Bilal Hussain",
+  "license": "ISC",
   "dependencies": {
     "gulp": "^3.9.1"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "browser-sync": "^2.23.5",
     "del": "^3.0.0",
-    "gulp": "^4.0.0",
-    "gulp-babel": "^7.0.0",
-    "gulp-clean-css": "^3.9.2",
+    "gulp-autoprefixer": "^5.0.0",
     "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
     "gulp-htmlmin": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-load-plugins": "^1.5.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Bilal Hussain",
-  "license": "ISC"
+    "gulp-size": "^3.0.0",
+    "gulp-uglify": "^3.0.0",
+    "yargs": "^11.0.0"
+  }
 }

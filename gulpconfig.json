@@ -1,0 +1,20 @@
+{
+  "path": {
+    "src": {
+      "root": "src/",
+      "html": "src/index.html",
+      "images": "src/images/**/*",
+      "sounds": "src/sounds/**/*",
+      "styles": "src/scss/**/*.scss",
+      "scripts": "src/js/*.js"
+    },
+    "build": {
+      "root": "build/",
+      "sounds": "build/sounds/",
+      "styles": "build/css/",
+      "scripts": "build/js/",
+      "images": "build/images/"
+    },
+    "autoprefixer": "last 2 versions, Explorer >= 11, Firefox >= 60"
+  }
+}
