@@ -19,7 +19,7 @@ function clean() {
 
 // Compiles and minifies HTML of nunjucks, outputs it in /build
 function html() {
-    return gulp.src(config.path.src.html)
+    return gulp.src(config.path.src.htmlIndex)
         .pipe(plugins.nunjucks.compile())
         .pipe(plugins.htmlmin({collapseWhitespace: true, removeComments: true}))
         .pipe(gulp.dest(config.path.build.root))
