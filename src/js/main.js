@@ -23,8 +23,6 @@ $(function() {
             this.screenSize = window.innerWidth;
             this.jumpSpeed = 500;
             this.endOfPage = $(document).height() - $(window).height();
-
-
         },
         bindEvents: function() {
             this.$elevatorUpBtn.on('click', this.elevatorThing.bind(this));
@@ -46,19 +44,20 @@ $(function() {
             this.nsfwTrapThing();
         },
         elevatorThing: function() {
-            var oneMinuteInMs = 30000,
-                oneMinuteInSec = 30;
+            var elevatorSpeedInMs = 30000,
+                elevatorSpeedInSec = 30,
+                elevatorIntervalSpeed = 1000;
 
             this.$htmlBody.animate({
                     scrollTop: 0
                 },
-                oneMinuteInMs,
+                elevatorSpeedInMs,
                 function() {
                     $('#sound-ding')[0].play();
                 }
             );
 
-            var counter = oneMinuteInSec,
+            var counter = elevatorSpeedInSec,
                 interval = setInterval(function() {
                     counter--;
 
@@ -72,7 +71,7 @@ $(function() {
                         this.$timeLeft.text('');
                         clearInterval(interval);
                     }
-                }, 1000);
+                }, elevatorIntervalSpeed);
         },
         jumpToEnd: function() {
             this.$htmlBody.animate({
@@ -91,10 +90,7 @@ $(function() {
             Website.$htmlBody.animate({
                     scrollTop: $targetEl.offset().top - 50
                 },
-                this.jumpSpeed,
-                function() {
-                    //$('#sound-ding')[0].play();
-                }
+                this.jumpSpeed
             );
 
             return false;
@@ -115,19 +111,6 @@ $(function() {
             });
         },
         audioMouseEnterThing: function() {
-            //var $triggerAudioBtn = $('.js-trigger-sound'),
-                //audioElements = $('audio');
-
-            // this.$triggerAudioBtn.on("mouseenter touchstart", function() {
-            //     var dataSound = $(this).data('sound');
-            //     $('#sound-' + dataSound)[0].play();
-            // }).on("mouseleave", function() {
-            //     Website.audioElements.each(function() {
-            //         this.pause();
-            //         this.currentTime = 0;
-            //     });
-            // });
-
             var dataSound = $(this).data('sound');
             $('#sound-' + dataSound)[0].play();
 
