@@ -54,20 +54,29 @@
 
     // Gif buttons
     &--gif {
-        background: #1defff;
-        color: $color-black;
-        display: inline-block;
+        position: relative;
 
         &:hover {
-            color: #1defff;
+            color: $color-white;
+
+            &:after {
+                height: 20px;
+                animation: bgcolour-flip 1.25s infinite;
+            }
         }
 
-        @include breakpoint(0px 1024px, 'from-to') {
-            background: transparent;
-            padding: 0;
-
-            &:hover {
-                color: $color-black;
+        &:after {
+            @include breakpoint(1024px, 'from') {
+                content: " ";
+                display: inline-block;
+                background: #1defff;
+                position: absolute;
+                left: 0;
+                bottom: 2px;
+                height: 3px;
+                width: 100%;
+                transition: all 0.15s;
+                z-index: -1;
             }
         }
     }

@@ -1,21 +1,32 @@
 /******************************
+* Main content wrapper
+******************************/
+.main-content {
+    max-width: 1000px;
+    position: relative;
+    margin: 100px auto;
+
+    @include breakpoint(0px 1024px, 'from-to') {
+        margin: 50px auto;
+    }
+}
+
+
+
+/******************************
 * Main content blocks (article)
 ******************************/
 .article {
     margin-top: 100px;
 
+    @include breakpoint(0px 1024px, 'from-to') {
+        margin-top: 50px;
+    }
+
     &.is-small {
         width: 75%;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    &.is-floor {
-        margin-top: 114px;
-
-        @include breakpoint(0px 1023px, 'from-to') {
-            margin-top: 45px;
-        }
     }
 
     &__header {
@@ -33,12 +44,12 @@
         position: relative;
         padding: 40px;
         margin: 0 auto;
-        transition: all 0.1s;
+        transition: all 0.25s;
 
-        border-bottom: $main-border-size solid $color-purple-light;
-        border-left: $main-border-size solid $color-purple-light;
-        border-right: $main-border-size solid $gray-border;
-        border-top: $main-border-size solid $gray-border;
+        border-bottom: $main-border-size solid #ffe8a7;
+        border-left: $main-border-size solid #c0bcff;
+        border-right: $main-border-size solid #ffa7bd;
+        border-top: $main-border-size solid #a7ffe9;
 
         @include breakpoint(0px 768px, 'from-to') {
             border-width: 5px;
@@ -49,10 +60,7 @@
         }
 
         &:hover {
-            border-bottom-color: $gray-border;
-            border-left-color: $gray-border;
-            border-right-color: $color-purple-light;
-            border-top-color: $color-purple-light;
+            border-color: #6900ff;
         }
 
         .is-top & {
