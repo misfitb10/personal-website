@@ -1,8 +1,7 @@
 {
   "path": {
     "src": {
-      "root": "src/",
-      "html": "src/index.html",
+      "html": "src/html/index.html",
       "images": "src/images/**/*",
       "sounds": "src/sounds/**/*",
       "styles": "src/scss/**/*.scss",
