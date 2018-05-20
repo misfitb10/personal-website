@@ -22,12 +22,5 @@ $font-size-h2:          15px !default;
 $font-size-default:     13.5px !default;
 $line-height-default:   23px !default;
 
-// Breakpoints
-$bp320:                 320px !default;
-$bp480:                 480px !default;
-$bp768:                 768px !default;
-$bp1024:                1024px !default;
-$bp1200:                1200px !default;
-
 // Misc.
-$main-border-size:      12px;
+$main-border-size:      12px !default;
