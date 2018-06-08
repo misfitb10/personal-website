@@ -7,15 +7,12 @@ h1, h2, h3, p, ul {
 
 h1 {
     font-family: $font-stack-roboto;
-    font-size: 45px;
+    font-size: 2em;
     display: inline-block;
-    background: #0ff;
-    box-shadow: 6px 6px 1px $bg-purple-base;
-    margin: 0;
+    background: #bffff4;
+    margin: 0 0 30px 0;
     line-height: 32px;
     position: relative;
-    top: -30px;
-    left: -72px;
 
     &:hover {
         animation: font-flip 1s infinite;

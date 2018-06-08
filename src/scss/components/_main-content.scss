@@ -30,6 +30,7 @@
     }
 
     &__header {
+        box-shadow: 5px 5px 1px rgba(0,0,0,0.5);
         max-width: 1000px;
         max-height: 400px;
         overflow: hidden;
@@ -46,10 +47,7 @@
         margin: 0 auto;
         transition: all 0.25s;
 
-        border-bottom: $main-border-size solid #ffe8a7;
-        border-left: $main-border-size solid #c0bcff;
-        border-right: $main-border-size solid #ffa7bd;
-        border-top: $main-border-size solid #a7ffe9;
+        border: $main-border-size solid #ffbcbc;
 
         @include breakpoint(0px 768px, 'from-to') {
             border-width: 5px;
@@ -60,7 +58,7 @@
         }
 
         &:hover {
-            border-color: #6900ff;
+            border-color: #c9bcff;
         }
 
         .is-top & {
