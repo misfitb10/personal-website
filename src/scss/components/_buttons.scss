@@ -5,9 +5,9 @@
     // General button container
     &-container {
         position: absolute;
-        left: -26px;
+        left: -20px;
         top: 100px;
-        width: 50px;
+        width: 40px;
 
         @include breakpoint(0px 1024px, 'from-to') {
             display: none;

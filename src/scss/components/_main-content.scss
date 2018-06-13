@@ -47,7 +47,7 @@
         margin: 0 auto;
         transition: all 0.25s;
 
-        border: $main-border-size solid #ffbcbc;
+        border: $main-border-size solid transparent;
 
         @include breakpoint(0px 768px, 'from-to') {
             border-width: 5px;
