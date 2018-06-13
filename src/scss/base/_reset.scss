@@ -16,7 +16,12 @@ html {
 
 body {
     margin: 0;
-    background-image: url("../images/bg.gif");
+    //background-image: url("../images/bg.gif");
+    background: #a0fbff; /* Old browsers */
+    background: -moz-linear-gradient(top, #a0fbff 0%, #a5ffbd 33%, #a5bfff 66%, #f7ffa5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a0fbff 0%,#a5ffbd 33%,#a5bfff 66%,#f7ffa5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a0fbff 0%,#a5ffbd 33%,#a5bfff 66%,#f7ffa5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0fbff', endColorstr='#f7ffa5',GradientType=0 ); /* IE6-9 */
     cursor: url(../images/rsz_cursor-cool.png) 70 60,pointer;
     font-family: 'Space Mono', Arial, sans-serif;
     font-size: 15px;
