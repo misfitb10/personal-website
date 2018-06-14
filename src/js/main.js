@@ -43,7 +43,9 @@ $(function() {
             this.jumpToEnd();
             this.nsfwTrapThing();
         },
-        elevatorThing: function() {
+        elevatorThing: function(e) {
+            e.preventDefault();
+
             var elevatorSpeedInMs = 30000,
                 elevatorSpeedInSec = 30,
                 elevatorIntervalSpeed = 1000;
