@@ -5,11 +5,18 @@ h1, h2, h3, p, ul {
     transition: all .25s;
 }
 
+h1, h2, h3 {
+    &:hover {
+        cursor: default;
+    }
+}
+
 h1 {
     font-family: $font-stack-roboto;
     font-size: 2em;
+    color: $color-white;
     display: inline-block;
-    background: #bffff4;
+    background: blue;
     margin: 0 0 30px 0;
     line-height: 32px;
     position: relative;
@@ -37,11 +44,9 @@ h1 {
 }
 
 h2 {
-    display: inline-block;
     font-size: 18px;
     margin: 20px 0 5px 0;
     padding-bottom: 1px;
-    border-bottom: 2px dashed red;
 }
 
 p {

@@ -1,20 +1,7 @@
 /******************************
 * Animations
 ******************************/
-@keyframes bgcolour-flip {
-    15% { background-color: blue; }
-    30% { background-color: purple; }
-    45% { background-color: orange; }
-    60% { background-color: green; }
-    75% { background-color: pink; }
-    90% { background-color: purple; }
-}
-
-@keyframes keep-rotating {
-    50%     { transform: rotate(225deg) }
-    100%    { transform: rotate(360deg); background-color: $color-white; color: #ff0090; }
-}
-
+// Used for heading 1
 @keyframes font-flip {
     15%     { font-family: Georgia, serif; border-color: blue; }
     30%     { font-family: Comic Sans MS, serif; border-color: purple; }
@@ -25,11 +12,28 @@
     100%    { font-family: Calibri, sans-serif; border-color: green; }
 }
 
+// Used for buttons
+@keyframes bgcolour-flip {
+    0%  { background-color: black; }
+    20% { background-color: blue; }
+    40% { background-color: yellow; }
+    60% { background-color: orange; }
+    80% { background-color: green; }
+    100% { background-color: $color-pink; }
+}
+
+// Used for label
+@keyframes keep-rotating {
+    50%     { transform: rotate(225deg) }
+    100%    { transform: rotate(360deg); background-color: $color-white; color: #ff0090; }
+}
+
+// Used for NSFW items
 @keyframes border-flip {
     15% { border-color: blue; }
     30% { border-color: purple; }
     45% { border-color: orange; }
     60% { border-color: green; }
-    75% { border-color: pink; }
-    90% { border-color: purple; }
+    75% { border-color: purple; }
+    90% { border-color: $color-pink; }
 }

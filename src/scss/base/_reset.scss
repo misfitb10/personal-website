@@ -16,7 +16,6 @@ html {
 
 body {
     margin: 0;
-    //background-image: url("../images/bg.gif");
     background: #a0fbff; /* Old browsers */
     background: -moz-linear-gradient(top, #a0fbff 0%, #a5ffbd 33%, #a5bfff 66%, #f7ffa5 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #a0fbff 0%,#a5ffbd 33%,#a5bfff 66%,#f7ffa5 100%); /* Chrome10-25,Safari5.1-6 */
@@ -47,14 +46,8 @@ img {
     width: 100%;
 }
 
-.clear-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 .overlay {
-    background-color: $bg-purple-base;
+    background-color: blue;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -68,8 +61,8 @@ img {
     position: absolute;
     right: -22px;
     top: -10px;
-    background: $bg-purple-base;
-    color: $color-white;
+    background: $color-white;
+    color: $color-black;
     transform: rotate(5deg);
 
     @include breakpoint(0px 1023px, 'from-to') {

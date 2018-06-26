@@ -44,7 +44,7 @@
         color: $color-white;
         text-decoration: none;
         display: inline-block;
-        background-color: #199e32;
+        background-color: red;
         transition: all .25s;
         margin-top: 20px;
 
@@ -55,20 +55,27 @@
 
     // Gif buttons
     &--gif {
-        cursor: default;
         position: relative;
 
-        &:hover {
-            color: $color-white;
+        @include breakpoint(1025px, 'from') {
+            cursor: default;
+            font-weight: bold;
+            font-size: 18px;
+        }
 
-            &:after {
-                height: 20px;
-                animation: bgcolour-flip 1.25s infinite;
+        &:hover {
+            @include breakpoint(1025px, 'from') {
+                color: $color-white;
+
+                &:after {
+                    height: 20px;
+                    animation: bgcolour-flip 1.25s infinite;
+                }
             }
         }
 
         &:after {
-            @include breakpoint(1024px, 'from') {
+            @include breakpoint(1025px, 'from') {
                 content: " ";
                 display: inline-block;
                 background: #1defff;
@@ -85,7 +92,7 @@
 
     // Sound buttons
     &--sound {
-        background: #ffa573;
+        background: #73ffdc;
         color: $color-black;
 
         &:hover {
