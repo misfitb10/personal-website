@@ -1,0 +1,19 @@
+/******************************
+* Small `loose` elements
+******************************/
+// Related links list (contains buttons)
+.related-links__list {
+    @include clearList;
+}
+
+// Project item (inside portfolio)
+.project-item {
+    border: 2px solid #000;
+    margin: 10px 0;
+    padding: 0 20px 0 20px;
+
+    &:hover {
+        background: $color-pink;
+        color: $color-white;
+    }
+}
