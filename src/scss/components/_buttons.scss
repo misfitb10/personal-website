@@ -56,6 +56,7 @@
     // Gif buttons
     &--gif {
         position: relative;
+        display: inline-block;
 
         @include breakpoint(1025px, 'from') {
             cursor: default;
@@ -92,11 +93,11 @@
 
     // Sound buttons
     &--sound {
-        background: #73ffdc;
+        background: $bgcolor-sound-btn;
         color: $color-black;
 
         &:hover {
-            color: #ffa573;
+            color: $color-sound-hover;
         }
     }
 

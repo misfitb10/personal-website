@@ -1,6 +1,56 @@
 /******************************
 * Small `loose` elements
 ******************************/
+// This is the first visit overlay
+.overlay {
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9839043434;
+}
+
+// Floor stuff (can be found on the upper right side of each floor)
+.floor {
+    &-label {
+        cursor: help;
+        position: absolute;
+        right: -22px;
+        top: -10px;
+        background: $color-white;
+        color: $color-black;
+        transform: rotate(5deg);
+
+        @include breakpoint(0px 1023px, 'from-to') {
+            right: 0;
+        }
+    }
+
+    &-name {
+        display: inline-block;
+
+        @include breakpoint(0px 1023px, 'from-to') {
+            font-size: 14px;
+        }
+
+        &:hover {
+            animation: keep-rotating 1s infinite;
+        }
+    }
+}
+
+// Side gif container, which is triggered by JS hover (can be found on the right side of containers)
+.side-gif {
+    background-image: url(../images/coding.gif);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 55%;
+    width: 100%;
+}
+
 // Related links list (contains buttons)
 .related-links__list {
     @include clearList;
@@ -15,5 +65,18 @@
     &:hover {
         background: $color-pink;
         color: $color-white;
+    }
+}
+
+// Elevator pitch button (can be found on the lower right corner)
+.elevator-pitch {
+    cursor: url(../images/rsz_tie.png) 4 12, pointer;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    text-align: center;
+
+    @include breakpoint(1366px, 'to') {
+        display: none;
     }
 }

@@ -1,6 +1,7 @@
-//************************************************************************//
-//  Mixin is from https://github.com/lukasborawski/bigos/blob/v-0.3/src/_mixins.scss
-//************************************************************************//
+/******************************
+* Mixin is from:
+* https://github.com/lukasborawski/bigos/blob/v-0.3/src/_mixins.scss
+******************************/
 @mixin breakpoint($point, $direction: false) {
     @if type-of($point) == number and not unitless($point) and $direction == false {
         @media // Custom
@@ -39,4 +40,12 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+@mixin rainbowBg() {
+    background: #a0fbff; /* Old browsers */
+    background: -moz-linear-gradient(top, #a0fbff 0%, #a5ffbd 33%, #a5bfff 66%, #f7ffa5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a0fbff 0%,#a5ffbd 33%,#a5bfff 66%,#f7ffa5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a0fbff 0%,#a5ffbd 33%,#a5bfff 66%,#f7ffa5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0fbff', endColorstr='#f7ffa5',GradientType=0 ); /* IE6-9 */
 }

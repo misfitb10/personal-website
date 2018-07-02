@@ -87,7 +87,7 @@ $(function() {
         },
         jumpToX: function() {
             var $targetElData = $(this).data('jumpto'),
-            $targetEl = $("#" + $targetElData);
+            $targetEl = $('#' + $targetElData);
 
             Website.$htmlBody.animate({
                     scrollTop: $targetEl.offset().top - 50
@@ -98,19 +98,21 @@ $(function() {
             return false;
         },
         gifHoverThing: function() {
-            var $triggerGifBtn = $(".js-trigger-gif"),
-                defaultImage = "url(images/coding.gif)";
+            var $triggerGifBtn = $('.js-trigger-gif'),
+                defaultImage = 'url(images/coding.gif)';
 
-            $triggerGifBtn.on("mouseenter touchstart", function() {
-                var dataGif = $(this).data('gif'),
-                    $mediaEl = $(this).parents('.article__main').find('.side-gif');
+            $triggerGifBtn
+                .on('mouseenter touchstart', function() {
+                    var dataGif = $(this).data('gif'),
+                        $mediaEl = $(this).parents('.article__main').find('.side-gif');
 
-                $($mediaEl).css("background-image", "url(images/" + dataGif + ".gif)");
-            }).on("mouseleave", function() {
-                var $mediaEl = $(this).parents('.article__main').find('.side-gif');
+                    $($mediaEl).css('background-image', 'url(images/' + dataGif + '.gif)');
+                })
+                .on('mouseleave', function() {
+                    var $mediaEl = $(this).parents('.article__main').find('.side-gif');
 
-                $mediaEl.css("background-image", defaultImage);
-            });
+                    $mediaEl.css('background-image', defaultImage);
+                });
         },
         audioMouseEnterThing: function() {
             var dataSound = $(this).data('sound');
@@ -129,11 +131,13 @@ $(function() {
         nsfwTrapThing: function() {
             var trapImgClass = 'nsfw__trap-image';
 
-            this.$trapBtn.on("mouseenter touchstart", function() {
-                $(this).addClass(trapImgClass);
-            }).on("mouseleave", function() {
-                $(this).removeClass(trapImgClass);
-            });
+            this.$trapBtn
+                .on('mouseenter touchstart', function() {
+                    $(this).addClass(trapImgClass);
+                })
+                .on('mouseleave', function() {
+                    $(this).removeClass(trapImgClass);
+                });
         },
         hideOverlay: function() {
             this.$overlay.hide();

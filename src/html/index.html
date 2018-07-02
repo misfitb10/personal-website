@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="en">
-{% include 'base/head.html' %}
+<head>
+    {% include 'base/meta.html' %}
+    {% include 'base/favicons.html' %}
+    {% include 'base/styles.html' %}
+    {% include 'base/scripts.html' %}
+    {% include 'base/hotjar.html' %}
+</head>
 
 <body>
     <main class="main-content is-centered">
@@ -34,6 +40,5 @@
 
     {% include 'components/misc/elevator-pitch.html' %}
     {% include 'components/misc/audio.html' %}
-
-    <div class="overlay"></div>
+    {% include 'components/misc/overlay.html' %}
 </body>

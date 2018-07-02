@@ -93,6 +93,8 @@ const __cb = gulp.series(clean, gulp.parallel(html, images, sounds, styles, scri
 const __cbw = gulp.series(clean, gulp.parallel(html, images, sounds, styles, scripts), watch);
 const __b = gulp.parallel(html, images, sounds, styles, scripts);
 const __bw = gulp.series(gulp.parallel(html, images, sounds, styles, scripts), watch);
+const __w = gulp.series(watch);
+
 
 // The tasks defined, based on the clean/build/watch constants (above)
 // Usage: gulp c, gulp cb, gulp cbw, gulp b, gulp bw
@@ -101,3 +103,4 @@ gulp.task('cb', __cb);
 gulp.task('cbw', __cbw);
 gulp.task('b', __b);
 gulp.task('bw', __bw);
+gulp.task('w', __w);
