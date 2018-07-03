@@ -8,12 +8,6 @@
     box-sizing: border-box;
 }
 
-html {
-    @include breakpoint(0px 1024px, 'from-to') {
-        margin: 10px;
-    }
-}
-
 body {
     margin: 0;
     cursor: url(../images/rsz_cursor-cool.png) 70 60,pointer;
