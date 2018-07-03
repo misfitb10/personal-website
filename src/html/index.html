@@ -1,44 +1,28 @@
 <!doctype html>
 <html class="no-js" lang="en">
-<head>
-    {% include 'base/meta.html' %}
-    {% include 'base/favicons.html' %}
-    {% include 'base/styles.html' %}
-    {% include 'base/scripts.html' %}
-    {% include 'base/hotjar.html' %}
-</head>
+    <head>
+        {% include 'base/meta.html' %}
+        {% include 'base/favicons.html' %}
+        {% include 'base/styles.html' %}
+        {% include 'base/scripts.html' %}
+        {% include 'base/hotjar.html' %}
+    </head>
 
-<body>
-    <main class="main-content is-centered">
-        <!-- Filler: Reached The Top -->
-        {% include 'components/fillers/reached-the-top.html' %}
+    <body>
+        <main class="main-content is-centered">
+            {% include 'components/fillers/reached-the-top.html' %}
+            {% include 'components/fillers/tetris-game.html' %}
+            {% include 'components/main/contact.html' %}
+            {% include 'components/fillers/dad-joke.html' %}
+            {% include 'components/main/work.html' %}
+            {% include 'components/fillers/big-shaq.html' %}
+            {% include 'components/main/about-me.html' %}
+            {% include 'components/fillers/random-cats.html' %}
+            {% include 'components/main/intro.html' %}
+        </main>
 
-        <!-- Filler: Tetris Game -->
-        {% include 'components/fillers/tetris-game.html' %}
-
-        <!-- ##### Floor 4: Contact ##### -->
-        {% include 'components/main/contact.html' %}
-
-        <!-- Filler: Moaning -->
-        {% include 'components/fillers/dad-joke.html' %}
-
-        <!-- ##### Floor 3: Work ##### -->
-        {% include 'components/main/work.html' %}
-
-        <!-- Filler: Big Shaq -->
-        {% include 'components/fillers/big-shaq.html' %}
-
-        <!-- ##### Floor 2: About Me ##### -->
-        {% include 'components/main/about-me.html' %}
-
-        <!-- Filler: Random Cats -->
-        {% include 'components/fillers/random-cats.html' %}
-
-        <!-- ##### Floor 1: Intro ##### -->
-        {% include 'components/main/intro.html' %}
-    </main>
-
-    {% include 'components/misc/elevator-pitch.html' %}
-    {% include 'components/misc/audio.html' %}
-    {% include 'components/misc/overlay.html' %}
-</body>
+        {% include 'components/misc/elevator-pitch.html' %}
+        {% include 'components/misc/audio.html' %}
+        {% include 'components/misc/overlay.html' %}
+    </body>
+</html>
